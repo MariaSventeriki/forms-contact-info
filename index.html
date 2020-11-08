@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Contact Information</h1>
+
+    <section id="register">
+        <img src="https://images.unsplash.com/photo-1586769852044-692d6e3703f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+            alt="broken">
+
+        <form action="https://www.google.com" method="POST">
+            <fieldset>
+                <legend>Personal Info</legend>
+
+                <section class="form-row">
+                    <label for="fNAme">First Name</label>
+                    <input name="firstName" type="text" placeholder="Some" id="fNAme">
+                </section>
+                <section class="form-row">
+                    <label for="lNAme">Last Name</label>
+                    <input name="lastNAme" type="text" placeholder="Body" id="lName">
+                </section>
+
+                <section class="form-row">
+                    <label for="bDate">Birth Date</label>
+                    <input type="date" id="bDtate" min="1900-01-01" max="2000-12-31">
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Info</legend>
+                <section class="form-row">
+                    <label for="cities">City</label>
+                    <select id="cities">
+                        <optgroup label="NRW">
+                            <option value="Dusseldorf">Dusseldorf</option>
+                            <option value="Neuss">Neuss</option>
+                        </optgroup>
+
+                        <optgroup label="Berlin">
+                            <option value="Berlin">Berlin</option>
+                        </optgroup>
+
+                        <optgroup label="Bayarn">
+                            <option value="Munchen">Munchen</option>
+                            <option value="Ulm">Ulm</option>
+                            <option value="Nurnberg">Nurnberg</option>
+                        </optgroup>
+                    </select>
+                </section>
+
+                <section class="form-row">
+                    <label for="street">Street</label>
+                    <input id="street" type="text" minlength="3" maxlength="30" placeholder="Sample Street">
+                </section>
+
+                <section class="form-row">
+                    <label for="hauseNo">Hause Number</label>
+                    <input id="hausNo" type="text" placeholder="123/A">
+                </section>
+
+                <section class="form-row">
+                    <label for="plz">Post Code</label>
+                    <input type="number" id="plz" min="10000" max="99999" placeholder="41460">
+                </section>
+
+                <section class="form-row">
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" id="tel" placeholder="+49 176 444 44 44">
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account</legend>
+
+                <section class="form-row">
+                    <label for="mail">e-mail</label>
+                    <input name="email" type="email" placeholder="email@email.com" id="mail">
+                </section>
+
+                <section class="form-row">
+                    <label for="pass">Password</label>
+                    <input name="pass" type="password" id="pass">
+                </section>
+            </fieldset>
+
+            <!--Best Case-->
+            <input id="submit" type="submit" value="Push me">
+            <!--Worst Case
+            <button>Let's Go</button>
+            <button>Let's Go</button>-->
+            <!--All cases run!!!-->
+        </form>
+    </section>
+
+    <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: #08f;"></path>
+        </svg></div>
+</body>
+
+
+</html>

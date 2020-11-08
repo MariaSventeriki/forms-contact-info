@@ -1,0 +1,81 @@
+body{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+h1 {
+    font-size: 2rem;;
+    text-align: center;
+}
+form {
+    padding: 10px;
+    background-color: #ec818196;
+    width:30%;
+    height: 50%;
+    padding-bottom: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 10px black;
+}
+
+fieldset{
+    border: 1px solid #000000;
+    margin-top: 15px;
+    color: #457b9d;
+   
+}
+
+label {
+    width: 30%;
+    font-weight: 400;
+    font-size: 0.5rem;
+    color: #115bc4;
+}
+
+input, #cities {
+    margin-bottom: 10px;
+    width: 30%;
+    height: 50%;
+    border: none;
+    border-bottom: 2px solid rgb(69, 91, 131);
+    background-color: transparent;
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#submit {
+    display: block;
+    margin: 20px auto 0 auto;
+    background-image: linear-gradient(90deg, #0b0d0f, #457b9d);
+    color: white;
+    font-weight: 600;
+}
+
+#register {
+    display: flex;
+    justify-content: center;
+}
+
+#register > img {
+    height: 511px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 10px black;
+}
+
+@media (max-width:993px) {
+    #register > img {
+        display: none;
+    }
+    
+}
